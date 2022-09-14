@@ -3,27 +3,83 @@
     <head> 
         <title>Weather in Tokyo </title>
         <style>
-            h2 {
+            body {
                 text-align:center;
+                font-family:Arial, Helvetica, sans-serif;
+                
+                
             }
-            h1 {
+            .blue {
                 text-align:center;
-                color:blue;
+                color:rgb(26, 100 , 214);
+                font-size:34px;
+                margin:0px;
+                line-height: 48px;
+
             }
+            .color  { 
+                font-size:18px !important;
+                font-family: monospace;
+                opacity: .70; 
+            } 
+            .date {
+                font-size:18.72px;
+                
+            }
+            .temp {
+                font-size: 34px;
+                margin:0;
+                line-height: 48px;    
+            }
+            li {
+                list-style:none;
+                padding: 10px;
+            }
+            ul{
+                padding-left:0px;
+            }
+            .button{
+                border-radius: 30px;
+                line-height: 22px; 
+                font-size:16px;
+                border:1px solid rgb(26, 100 , 214);
+                background-color: rgb(26, 100 , 214);
+                padding: 16px 24px;
+                font-family: Arial;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                color:white;
+                margin: 4px;
+                
+
+            }
+            .button:hover {
+                background-color: white;
+                color:rgb(26, 100 , 214);
+            }
+
         </style>
     </head>
     <body>
-        <h1>🌤</h1>
-        <h1>Currently 21° in Tokyo</h1>
-        <h1>13° / <strong>23°</strong></h1>
-        <br>
-        <h2>🌧Tomorrow</h2>
-        <h2>10°  /  22°</h2>
-        <br>
-        <h2>🌥 Saturday</h2>
-        <h2>15°  /  17°</h2>
-        <br>
-        <h2>☀️ Sunday</h2>
-        <h2>25°  /  28°</h2>
+        <h1 class = "blue">🌤 <br>Currently 21° in Tokyo</h1>   
+        <p class = "temp" >13° / <strong>23°</strong></p>
+        <ul>
+            <li>
+                <h3 class = "date" >🌧Tomorrow</h3>
+                <p class = "color">10°  /  <strong>22°</strong></p>
+            </li>
+        
+            <li>
+                <h3 class = "date">🌥 Saturday</h3>
+                <p class = "color">15°  /  <strong>17°</strong></p>
+            </li>
+        
+            <li>
+                <h3 class = "date">☀️ Sunday</h3>
+                <p class = "color">25°  /  <strong>28°</strong></p>
+            </li>
+        </ul>
+        <button class = "button"> Change city </button>
+        <p style = "margin-top:16px;" class = "color">Coded by Aidan Brown</p>
     </body>
 </html>
